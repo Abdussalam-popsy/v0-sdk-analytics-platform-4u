@@ -20,10 +20,10 @@ export function Hero() {
 
           <h1 className="text-balance text-3xl font-semibold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-[56px]">
             Let Your Users{" "}
-            <span className="inline-flex items-baseline gap-1 rounded-md bg-muted px-3 py-1 font-mono text-[0.85em]">
-              <span className="text-muted-foreground">{"<"}</span>
+            <span className="inline-flex items-baseline gap-1 rounded-md bg-emerald-950/50 px-3 py-1 font-mono text-[0.85em] text-emerald-400">
+              <span className="text-emerald-600">{"<"}</span>
               Customize
-              <span className="text-muted-foreground">{"/>"}</span>
+              <span className="text-emerald-600">{"/>"}</span>
             </span>{" "}
             Your Site
           </h1>
