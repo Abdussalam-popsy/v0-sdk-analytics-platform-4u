@@ -82,27 +82,18 @@ export function Hero() {
                     <div className="h-8 w-20 rounded bg-foreground/15" />
                   </div>
                 </div>
-                {/* Floating control panel */}
-                <div className="absolute -right-2 top-12 w-40 rounded-lg border border-border/60 bg-card p-3 shadow-lg md:-right-4">
-                  <div className="mb-2 text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
-                    Customize
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between">
-                      <span className="text-[11px] text-muted-foreground">Dark Mode</span>
-                      <div className="h-3 w-6 rounded-full bg-foreground" />
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-[11px] text-muted-foreground">Font Size</span>
-                      <div className="h-1 w-10 rounded-full bg-muted">
-                        <div className="h-1 w-7 rounded-full bg-foreground" />
-                      </div>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-[11px] text-muted-foreground">Spacing</span>
-                      <div className="h-1 w-10 rounded-full bg-muted">
-                        <div className="h-1 w-4 rounded-full bg-foreground" />
-                      </div>
+                {/* Chat bubble */}
+                <div className="absolute -right-2 bottom-8 w-48 md:-right-6">
+                  <div className="rounded-xl rounded-br-sm border border-border/60 bg-card px-4 py-3 shadow-lg">
+                    <p className="text-xs leading-relaxed text-foreground">
+                      {"Make the text "}
+                      <span className="font-semibold">bold</span>
+                      {" and increase the font size"}
+                    </p>
+                    <div className="mt-1.5 flex items-center gap-1.5">
+                      <span className="h-1 w-1 animate-pulse rounded-full bg-muted-foreground" />
+                      <span className="h-1 w-1 animate-pulse rounded-full bg-muted-foreground [animation-delay:150ms]" />
+                      <span className="h-1 w-1 animate-pulse rounded-full bg-muted-foreground [animation-delay:300ms]" />
                     </div>
                   </div>
                 </div>
