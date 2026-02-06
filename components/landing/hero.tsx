@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react"
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden pt-16">
+    <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden pt-32">
       {/* Background glow effects */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/4 top-1/4 h-96 w-96 rounded-full bg-muted/50 blur-3xl" />
