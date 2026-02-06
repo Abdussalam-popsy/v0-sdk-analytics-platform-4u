@@ -83,17 +83,36 @@ export function Hero() {
                   </div>
                 </div>
                 {/* Chat bubble */}
-                <div className="absolute -right-2 bottom-8 w-48 md:-right-6">
-                  <div className="rounded-xl rounded-br-sm border border-border/60 bg-card px-4 py-3 shadow-lg">
-                    <p className="text-xs leading-relaxed text-foreground">
-                      {"Make the text "}
-                      <span className="font-semibold">bold</span>
-                      {" and increase the font size"}
-                    </p>
-                    <div className="mt-1.5 flex items-center gap-1.5">
-                      <span className="h-1 w-1 animate-pulse rounded-full bg-muted-foreground" />
-                      <span className="h-1 w-1 animate-pulse rounded-full bg-muted-foreground [animation-delay:150ms]" />
-                      <span className="h-1 w-1 animate-pulse rounded-full bg-muted-foreground [animation-delay:300ms]" />
+                <div className="absolute -right-2 bottom-6 w-56 md:-right-8">
+                  <div className="overflow-hidden rounded-xl border border-border/60 bg-card shadow-lg">
+                    {/* Chat header */}
+                    <div className="flex items-center gap-2 border-b border-border/40 px-3 py-2">
+                      <div className="h-2 w-2 rounded-full bg-emerald-500" />
+                      <span className="text-[10px] font-medium text-muted-foreground">Visitor</span>
+                      <span className="ml-auto text-[9px] text-muted-foreground/60">just now</span>
+                    </div>
+                    {/* Message */}
+                    <div className="px-3 py-2.5">
+                      <div className="flex gap-2">
+                        <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-muted text-[9px] font-semibold text-foreground">
+                          V
+                        </div>
+                        <div className="space-y-1.5">
+                          <div className="rounded-lg rounded-tl-sm bg-muted px-2.5 py-1.5">
+                            <p className="text-[11px] leading-relaxed text-foreground">
+                              {"Make the text "}
+                              <span className="font-bold">bold</span>
+                              {" and increase the font size"}
+                            </p>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <span className="h-[3px] w-[3px] animate-pulse rounded-full bg-muted-foreground/60" />
+                            <span className="h-[3px] w-[3px] animate-pulse rounded-full bg-muted-foreground/60 [animation-delay:150ms]" />
+                            <span className="h-[3px] w-[3px] animate-pulse rounded-full bg-muted-foreground/60 [animation-delay:300ms]" />
+                            <span className="ml-1 text-[9px] text-muted-foreground/50">applying...</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
