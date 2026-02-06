@@ -19,7 +19,13 @@ export function Hero() {
           </div>
 
           <h1 className="text-balance text-3xl font-semibold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-[56px]">
-            Let Your Users <span className="font-mono">Customize</span> Your Site
+            Let Your Users{" "}
+            <span className="inline-flex items-baseline gap-1 rounded-md bg-muted px-3 py-1 font-mono text-[0.85em]">
+              <span className="text-muted-foreground">{"<"}</span>
+              Customize
+              <span className="text-muted-foreground">{"/>"}</span>
+            </span>{" "}
+            Your Site
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">
