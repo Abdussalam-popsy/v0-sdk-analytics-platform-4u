@@ -7,9 +7,9 @@ export function Hero() {
     <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden pt-32">
       {/* Animated gradient blobs */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="hero-blob-1 absolute -left-24 top-1/4 h-[500px] w-[500px] rounded-full bg-emerald-500/[0.07] blur-[100px]" />
-        <div className="hero-blob-2 absolute -right-24 top-1/3 h-[400px] w-[400px] rounded-full bg-white/[0.04] blur-[100px]" />
-        <div className="hero-blob-3 absolute bottom-0 left-1/3 h-[450px] w-[450px] rounded-full bg-emerald-400/[0.05] blur-[120px]" />
+        <div className="hero-blob-1 absolute -left-32 top-1/4 h-[700px] w-[700px] rounded-full bg-emerald-500/20 blur-[140px]" />
+        <div className="hero-blob-2 absolute -right-32 top-1/4 h-[600px] w-[600px] rounded-full bg-white/10 blur-[120px]" />
+        <div className="hero-blob-3 absolute -bottom-32 left-1/4 h-[650px] w-[650px] rounded-full bg-emerald-400/15 blur-[150px]" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-6 text-center">
