@@ -5,10 +5,11 @@ import { ArrowRight } from "lucide-react"
 export function Hero() {
   return (
     <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden pt-32">
-      {/* Background glow effects */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-1/4 top-1/4 h-96 w-96 rounded-full bg-muted/50 blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 h-96 w-96 rounded-full bg-muted/30 blur-3xl" />
+      {/* Animated gradient blobs */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="hero-blob-1 absolute -left-24 top-1/4 h-[500px] w-[500px] rounded-full bg-emerald-500/[0.07] blur-[100px]" />
+        <div className="hero-blob-2 absolute -right-24 top-1/3 h-[400px] w-[400px] rounded-full bg-white/[0.04] blur-[100px]" />
+        <div className="hero-blob-3 absolute bottom-0 left-1/3 h-[450px] w-[450px] rounded-full bg-emerald-400/[0.05] blur-[120px]" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-6 text-center">
