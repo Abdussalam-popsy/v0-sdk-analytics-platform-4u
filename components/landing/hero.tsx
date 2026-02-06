@@ -22,7 +22,7 @@ export function Hero() {
             Let Your Users{" "}
             <span className="inline-flex items-baseline gap-1 rounded-md bg-emerald-950/50 px-3 py-1 font-mono text-[0.85em] text-emerald-400">
               <span className="text-emerald-600">{"<"}</span>
-              Customize
+              Personalise
               <span className="text-emerald-600">{"/>"}</span>
             </span>{" "}
             Your Site
