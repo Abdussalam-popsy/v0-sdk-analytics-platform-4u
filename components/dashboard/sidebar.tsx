@@ -18,8 +18,9 @@ import {
   ExternalLink,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { sites } from "@/lib/mock-data"
+import { sites as defaultSites } from "@/lib/mock-data"
 import { useState } from "react"
+import { AddSiteModal } from "@/components/dashboard/add-site-modal"
 
 const menuItems = [
   { name: "Overview", href: "/dashboard", icon: LayoutDashboard },
@@ -42,7 +43,15 @@ export function DashboardSidebar({
 }) {
   const pathname = usePathname()
   const [siteDropdownOpen, setSiteDropdownOpen] = useState(false)
-  const [activeSite, setActiveSite] = useState(sites[0].name)
+  const [activeSite, setActiveSite] = useState(defaultSites[0].name)
+  const [siteList, setSiteList] = useState(defaultSites)
+  const [showAddSite, setShowAddSite] = useState(false)
+
+  const handleAddSite = (name: string) => {
+    setSiteList([...siteList, { name, active: true }])
+    setActiveSite(name)
+    setSiteDropdownOpen(false)
+  }
 
   return (
     <aside
@@ -83,7 +92,7 @@ export function DashboardSidebar({
           </button>
           {siteDropdownOpen && (
             <div className="mt-1 rounded-lg border border-border/60 bg-popover p-1 shadow-lg">
-              {sites.map((site) => (
+              {siteList.map((site) => (
                 <button
                   key={site.name}
                   onClick={() => {
@@ -100,7 +109,10 @@ export function DashboardSidebar({
                 </button>
               ))}
               <div className="my-1 border-t border-border/40" />
-              <button className="flex w-full items-center gap-2 rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground">
+              <button
+                onClick={() => setShowAddSite(true)}
+                className="flex w-full items-center gap-2 rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+              >
                 <Plus className="h-3.5 w-3.5" />
                 Add Site
               </button>
@@ -171,6 +183,7 @@ export function DashboardSidebar({
           {!collapsed && "Logout"}
         </button>
       </div>
+      {showAddSite && <AddSiteModal onClose={() => setShowAddSite(false)} onAdd={handleAddSite} />}
     </aside>
   )
 }
