@@ -132,13 +132,13 @@
 }
 
 .hero-blob-1 {
-  animation: hero-blob-1 20s ease-in-out infinite;
+  animation: hero-blob-1 30s ease-in-out infinite;
 }
 
 .hero-blob-2 {
-  animation: hero-blob-2 25s ease-in-out infinite;
+  animation: hero-blob-2 35s ease-in-out infinite;
 }
 
 .hero-blob-3 {
-  animation: hero-blob-3 18s ease-in-out infinite;
+  animation: hero-blob-3 28s ease-in-out infinite;
 }
