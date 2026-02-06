@@ -55,7 +55,7 @@ export function Features() {
               </p>
               {feature.code && (
                 <div className="mt-4 overflow-x-auto rounded-lg bg-muted/50 p-3">
-                  <code className="text-xs text-foreground">{feature.code}</code>
+                  <code className="text-xs text-emerald-400">{feature.code}</code>
                 </div>
               )}
               {!feature.code && feature.title === "Real-Time Customization" && (
@@ -63,19 +63,19 @@ export function Features() {
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-muted-foreground">Font Size</span>
                     <div className="h-1.5 w-20 rounded-full bg-muted">
-                      <div className="h-1.5 w-14 rounded-full bg-foreground" />
+                      <div className="h-1.5 w-14 rounded-full bg-emerald-500" />
                     </div>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-muted-foreground">Contrast</span>
                     <div className="h-1.5 w-20 rounded-full bg-muted">
-                      <div className="h-1.5 w-10 rounded-full bg-foreground" />
+                      <div className="h-1.5 w-10 rounded-full bg-emerald-500" />
                     </div>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-muted-foreground">Spacing</span>
                     <div className="h-1.5 w-20 rounded-full bg-muted">
-                      <div className="h-1.5 w-6 rounded-full bg-foreground" />
+                      <div className="h-1.5 w-6 rounded-full bg-emerald-500" />
                     </div>
                   </div>
                 </div>
@@ -85,7 +85,7 @@ export function Features() {
                   {[40, 65, 45, 80, 55, 70, 90].map((h, i) => (
                     <div
                       key={i}
-                      className="flex-1 rounded-sm bg-foreground/30"
+                      className="flex-1 rounded-sm bg-emerald-500/40"
                       style={{ height: `${h * 0.5}px` }}
                     />
                   ))}

@@ -60,11 +60,11 @@ export function HowItWorks() {
                   <pre className="overflow-x-auto text-xs">
                     <code className="text-muted-foreground">
                       {"<body>\n  <!-- your content -->\n\n  "}
-                      <span className="text-foreground">
+                      <span className="text-emerald-400">
                         {'<script src="personalisable.io/sdk.js">'}
                       </span>
                       {"\n  "}
-                      <span className="text-foreground">{"</script>"}</span>
+                      <span className="text-emerald-400">{"</script>"}</span>
                       {"\n</body>"}
                     </code>
                   </pre>
@@ -89,7 +89,7 @@ export function HowItWorks() {
                         <span className="text-[10px] text-muted-foreground">18px</span>
                       </div>
                       <div className="h-1.5 w-full rounded-full bg-muted">
-                        <div className="h-1.5 w-3/4 rounded-full bg-foreground" />
+                        <div className="h-1.5 w-3/4 rounded-full bg-emerald-500" />
                       </div>
                     </div>
                     <div>
@@ -98,7 +98,7 @@ export function HowItWorks() {
                         <span className="text-[10px] text-muted-foreground">Wider</span>
                       </div>
                       <div className="h-1.5 w-full rounded-full bg-muted">
-                        <div className="h-1.5 w-1/2 rounded-full bg-foreground" />
+                        <div className="h-1.5 w-1/2 rounded-full bg-emerald-500" />
                       </div>
                     </div>
                   </div>
@@ -112,13 +112,13 @@ export function HowItWorks() {
                       <span className="text-xs font-medium text-foreground">
                         Customizations
                       </span>
-                      <span className="text-xs text-foreground">+23%</span>
+                      <span className="text-xs text-emerald-400">+23%</span>
                     </div>
                     <div className="flex items-end gap-1.5">
                       {[30, 50, 40, 70, 55, 80, 65].map((h, i) => (
                         <div
                           key={i}
-                          className="flex-1 rounded-sm bg-foreground/30 transition-all hover:bg-foreground/50"
+                          className="flex-1 rounded-sm bg-emerald-500/40 transition-all hover:bg-emerald-500/60"
                           style={{ height: `${h * 0.6}px` }}
                         />
                       ))}

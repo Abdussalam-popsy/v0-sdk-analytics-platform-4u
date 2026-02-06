@@ -70,12 +70,12 @@ export function Pricing() {
               key={plan.name}
               className={`relative rounded-xl border p-6 ${
                 plan.popular
-                  ? "border-foreground bg-card shadow-lg"
+                  ? "border-emerald-500/60 bg-card shadow-lg shadow-emerald-500/5"
                   : "border-border/60 bg-card"
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-3 left-6 rounded-full bg-foreground px-3 py-0.5 text-xs font-medium text-background">
+                <div className="absolute -top-3 left-6 rounded-full bg-emerald-500 px-3 py-0.5 text-xs font-medium text-emerald-950">
                   Popular
                 </div>
               )}
@@ -93,7 +93,7 @@ export function Pricing() {
               <ul className="mt-6 space-y-3">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-center gap-2">
-                    <Check className="h-4 w-4 shrink-0 text-foreground" />
+                    <Check className="h-4 w-4 shrink-0 text-emerald-500" />
                     <span className="text-sm text-muted-foreground">{feature}</span>
                   </li>
                 ))}
