@@ -37,8 +37,8 @@ export function UseCases() {
         <div className="mt-16 grid gap-8 md:grid-cols-3">
           {useCases.map((useCase) => (
             <div key={useCase.title} className="text-center">
-              <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
-                <useCase.icon className="h-6 w-6 text-primary" />
+              <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-muted">
+                <useCase.icon className="h-6 w-6 text-foreground" />
               </div>
               <h3 className="mb-2 text-lg font-semibold text-foreground">
                 {useCase.title}

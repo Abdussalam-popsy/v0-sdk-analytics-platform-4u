@@ -38,11 +38,11 @@ export const stats = [
 ]
 
 export const popularCustomizations = [
-  { name: "Dark Mode Toggle", percentage: 68, color: "hsl(217, 91%, 60%)" },
-  { name: "Font Size +2", percentage: 45, color: "hsl(160, 60%, 45%)" },
-  { name: "Sans to Serif", percentage: 32, color: "hsl(30, 80%, 55%)" },
-  { name: "Color Scheme", percentage: 28, color: "hsl(280, 65%, 60%)" },
-  { name: "Spacing Wider", percentage: 15, color: "hsl(340, 75%, 55%)" },
+  { name: "Dark Mode Toggle", percentage: 68, color: "hsl(0, 0%, 98%)" },
+  { name: "Font Size +2", percentage: 45, color: "hsl(0, 0%, 70%)" },
+  { name: "Sans to Serif", percentage: 32, color: "hsl(0, 0%, 50%)" },
+  { name: "Color Scheme", percentage: 28, color: "hsl(0, 0%, 35%)" },
+  { name: "Spacing Wider", percentage: 15, color: "hsl(0, 0%, 20%)" },
 ]
 
 export const activityTemplates = [

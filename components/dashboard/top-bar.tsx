@@ -25,7 +25,7 @@ export function TopBar() {
           <span className="hidden sm:inline">Export</span>
         </Button>
         <Avatar className="h-8 w-8">
-          <AvatarFallback className="bg-primary/10 text-xs text-primary">
+          <AvatarFallback className="bg-muted text-xs text-foreground">
             JD
           </AvatarFallback>
         </Avatar>

@@ -42,10 +42,10 @@ export function Features() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="group rounded-xl border border-border/60 bg-card p-6 transition-colors hover:border-primary/30 hover:bg-card/80"
+              className="group rounded-xl border border-border/60 bg-card p-6 transition-colors hover:border-foreground/20 hover:bg-card/80"
             >
-              <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                <feature.icon className="h-5 w-5 text-primary" />
+              <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-muted">
+                <feature.icon className="h-5 w-5 text-foreground" />
               </div>
               <h3 className="mb-2 text-lg font-semibold text-foreground">
                 {feature.title}
@@ -55,7 +55,7 @@ export function Features() {
               </p>
               {feature.code && (
                 <div className="mt-4 overflow-x-auto rounded-lg bg-muted/50 p-3">
-                  <code className="text-xs text-primary">{feature.code}</code>
+                  <code className="text-xs text-foreground">{feature.code}</code>
                 </div>
               )}
               {!feature.code && feature.title === "Real-Time Customization" && (
@@ -63,19 +63,19 @@ export function Features() {
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-muted-foreground">Font Size</span>
                     <div className="h-1.5 w-20 rounded-full bg-muted">
-                      <div className="h-1.5 w-14 rounded-full bg-primary" />
+                      <div className="h-1.5 w-14 rounded-full bg-foreground" />
                     </div>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-muted-foreground">Contrast</span>
                     <div className="h-1.5 w-20 rounded-full bg-muted">
-                      <div className="h-1.5 w-10 rounded-full bg-primary" />
+                      <div className="h-1.5 w-10 rounded-full bg-foreground" />
                     </div>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-muted-foreground">Spacing</span>
                     <div className="h-1.5 w-20 rounded-full bg-muted">
-                      <div className="h-1.5 w-6 rounded-full bg-primary" />
+                      <div className="h-1.5 w-6 rounded-full bg-foreground" />
                     </div>
                   </div>
                 </div>
@@ -85,7 +85,7 @@ export function Features() {
                   {[40, 65, 45, 80, 55, 70, 90].map((h, i) => (
                     <div
                       key={i}
-                      className="flex-1 rounded-sm bg-primary/30"
+                      className="flex-1 rounded-sm bg-foreground/30"
                       style={{ height: `${h * 0.5}px` }}
                     />
                   ))}

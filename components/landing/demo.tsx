@@ -135,7 +135,7 @@ export function Demo() {
                   <button
                     onClick={() => setDarkMode(!darkMode)}
                     className={`relative h-5 w-10 rounded-full transition-colors ${
-                      darkMode ? "bg-primary" : "bg-muted"
+                      darkMode ? "bg-foreground" : "bg-muted-foreground"
                     }`}
                     aria-label="Toggle dark mode"
                   >
@@ -162,7 +162,7 @@ export function Demo() {
                   max="24"
                   value={fontSize}
                   onChange={(e) => setFontSize(Number(e.target.value))}
-                  className="w-full accent-primary"
+                  className="w-full accent-foreground"
                 />
               </div>
 
@@ -183,7 +183,7 @@ export function Demo() {
                   step="0.1"
                   value={spacing}
                   onChange={(e) => setSpacing(Number(e.target.value))}
-                  className="w-full accent-primary"
+                  className="w-full accent-foreground"
                 />
               </div>
             </div>

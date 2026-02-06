@@ -74,7 +74,7 @@ export function ActivityFeed() {
           Live Activity Feed
         </h3>
         <div className="flex items-center gap-1.5">
-          <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-500" />
+          <span className="h-2 w-2 animate-pulse rounded-full bg-foreground" />
           <span className="text-xs text-muted-foreground">Live</span>
         </div>
       </div>
@@ -87,8 +87,8 @@ export function ActivityFeed() {
               key={activity.id}
               className="flex items-center gap-3 rounded-lg px-3 py-2 transition-colors hover:bg-muted/50"
             >
-              <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary/10">
-                <Icon className="h-3.5 w-3.5 text-primary" />
+              <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-muted">
+                <Icon className="h-3.5 w-3.5 text-foreground" />
               </div>
               <div className="min-w-0 flex-1">
                 <p className="truncate text-sm text-foreground">

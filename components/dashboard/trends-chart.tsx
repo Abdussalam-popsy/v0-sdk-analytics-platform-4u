@@ -13,11 +13,11 @@ import {
 } from "recharts"
 
 const lines = [
-  { dataKey: "darkMode", name: "Dark Mode", color: "hsl(217, 91%, 60%)" },
-  { dataKey: "fontSize", name: "Font Size", color: "hsl(160, 60%, 45%)" },
-  { dataKey: "fontFamily", name: "Font Family", color: "hsl(30, 80%, 55%)" },
-  { dataKey: "colorScheme", name: "Color Scheme", color: "hsl(280, 65%, 60%)" },
-  { dataKey: "spacing", name: "Spacing", color: "hsl(340, 75%, 55%)" },
+  { dataKey: "darkMode", name: "Dark Mode", color: "hsl(0, 0%, 98%)" },
+  { dataKey: "fontSize", name: "Font Size", color: "hsl(0, 0%, 70%)" },
+  { dataKey: "fontFamily", name: "Font Family", color: "hsl(0, 0%, 50%)" },
+  { dataKey: "colorScheme", name: "Color Scheme", color: "hsl(0, 0%, 35%)" },
+  { dataKey: "spacing", name: "Spacing", color: "hsl(0, 0%, 20%)" },
 ]
 
 function CustomTooltip({
@@ -63,19 +63,19 @@ export function TrendsChart() {
           >
             <CartesianGrid
               strokeDasharray="3 3"
-              stroke="hsl(240, 3.7%, 15.9%)"
+              stroke="hsl(0, 0%, 15%)"
               vertical={false}
             />
             <XAxis
               dataKey="date"
               axisLine={false}
               tickLine={false}
-              tick={{ fill: "hsl(240, 5%, 64.9%)", fontSize: 12 }}
+              tick={{ fill: "hsl(0, 0%, 55%)", fontSize: 12 }}
             />
             <YAxis
               axisLine={false}
               tickLine={false}
-              tick={{ fill: "hsl(240, 5%, 64.9%)", fontSize: 12 }}
+              tick={{ fill: "hsl(0, 0%, 55%)", fontSize: 12 }}
             />
             <Tooltip content={<CustomTooltip />} />
             <Legend

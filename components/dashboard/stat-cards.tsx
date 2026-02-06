@@ -28,7 +28,7 @@ export function StatCards() {
               <span className="text-2xl font-bold text-foreground">
                 {stat.value}
               </span>
-              <span className="text-xs font-medium text-emerald-500">
+              <span className="text-xs font-medium text-foreground">
                 {stat.change}
               </span>
               <span className="text-xs text-muted-foreground">
@@ -42,7 +42,7 @@ export function StatCards() {
                     <Line
                       type="monotone"
                       dataKey="value"
-                      stroke="hsl(217, 91%, 60%)"
+                      stroke="hsl(0, 0%, 98%)"
                       strokeWidth={1.5}
                       dot={false}
                     />

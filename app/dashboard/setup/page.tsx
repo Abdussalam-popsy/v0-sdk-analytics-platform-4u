@@ -66,7 +66,7 @@ export default function SetupPage() {
                 key={step.number}
                 className={`rounded-xl border p-6 transition-colors ${
                   index <= currentStep
-                    ? "border-primary/30 bg-card"
+                    ? "border-foreground/20 bg-card"
                     : "border-border/40 bg-card/50"
                 }`}
               >
@@ -74,9 +74,9 @@ export default function SetupPage() {
                   <div
                     className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-semibold ${
                       index < currentStep
-                        ? "bg-primary text-primary-foreground"
+                        ? "bg-foreground text-background"
                         : index === currentStep
-                          ? "border-2 border-primary text-primary"
+                          ? "border-2 border-foreground text-foreground"
                           : "border border-border text-muted-foreground"
                     }`}
                   >
@@ -129,7 +129,7 @@ export default function SetupPage() {
                         <div className="rounded-lg border border-border/60 bg-muted/30 p-4">
                           <pre className="overflow-x-auto text-xs text-muted-foreground">
                             {"<body>\n  <!-- your content -->\n\n  "}
-                            <span className="text-primary">{scriptTag}</span>
+                            <span className="text-foreground">{scriptTag}</span>
                             {"\n</body>"}
                           </pre>
                         </div>
@@ -150,12 +150,12 @@ export default function SetupPage() {
                       <div className="mt-4">
                         {!verified ? (
                           <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                            <div className="h-4 w-4 animate-spin rounded-full border-2 border-primary border-t-transparent" />
+                            <div className="h-4 w-4 animate-spin rounded-full border-2 border-foreground border-t-transparent" />
                             Checking for SDK installation...
                           </div>
                         ) : (
                           <div className="space-y-4">
-                            <div className="flex items-center gap-2 text-sm text-emerald-500">
+                            <div className="flex items-center gap-2 text-sm text-foreground">
                               <CheckCircle2 className="h-4 w-4" />
                               SDK detected on your site
                             </div>

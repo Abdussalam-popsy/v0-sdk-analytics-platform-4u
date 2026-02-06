@@ -15,6 +15,7 @@ import {
   ChevronDown,
   PanelLeftClose,
   PanelLeft,
+  ExternalLink,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { sites } from "@/lib/mock-data"
@@ -92,7 +93,7 @@ export function DashboardSidebar({
                   className="flex w-full items-center gap-2 rounded-md px-3 py-1.5 text-sm text-foreground transition-colors hover:bg-muted"
                 >
                   {activeSite === site.name && (
-                    <Check className="h-3.5 w-3.5 text-primary" />
+                    <Check className="h-3.5 w-3.5 text-foreground" />
                   )}
                   {activeSite !== site.name && <span className="w-3.5" />}
                   <span className="truncate">{site.name}</span>
@@ -119,7 +120,7 @@ export function DashboardSidebar({
               className={cn(
                 "flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors",
                 isActive
-                  ? "bg-primary/10 font-medium text-primary"
+                  ? "bg-muted font-medium text-foreground"
                   : "text-muted-foreground hover:bg-muted hover:text-foreground",
                 collapsed && "justify-center px-0"
               )}
@@ -134,6 +135,17 @@ export function DashboardSidebar({
 
       {/* Bottom items */}
       <div className="border-t border-border/60 p-3 space-y-1">
+        <Link
+          href="/"
+          className={cn(
+            "flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground",
+            collapsed && "justify-center px-0"
+          )}
+          title={collapsed ? "Back to site" : undefined}
+        >
+          <ExternalLink className="h-4 w-4 shrink-0" />
+          {!collapsed && "Back to site"}
+        </Link>
         {bottomItems.map((item) => (
           <Link
             key={item.name}

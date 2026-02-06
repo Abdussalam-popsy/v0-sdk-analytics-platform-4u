@@ -36,7 +36,7 @@ export function PopularCustomizations() {
               width={110}
               axisLine={false}
               tickLine={false}
-              tick={{ fill: "hsl(240, 5%, 64.9%)", fontSize: 12 }}
+              tick={{ fill: "hsl(0, 0%, 55%)", fontSize: 12 }}
             />
             <Bar
               dataKey="percentage"

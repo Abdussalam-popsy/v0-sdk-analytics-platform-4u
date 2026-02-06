@@ -40,7 +40,7 @@ export function HowItWorks() {
         <div className="mt-16 grid gap-12 md:grid-cols-3">
           {steps.map((step) => (
             <div key={step.step} className="relative">
-              <div className="mb-4 text-5xl font-bold text-primary/15">
+              <div className="mb-4 text-5xl font-bold text-foreground/10">
                 {step.step}
               </div>
               <h3 className="mb-2 text-xl font-semibold text-foreground">
@@ -60,11 +60,11 @@ export function HowItWorks() {
                   <pre className="overflow-x-auto text-xs">
                     <code className="text-muted-foreground">
                       {"<body>\n  <!-- your content -->\n\n  "}
-                      <span className="text-primary">
+                      <span className="text-foreground">
                         {'<script src="personalisable.io/sdk.js">'}
                       </span>
                       {"\n  "}
-                      <span className="text-primary">{"</script>"}</span>
+                      <span className="text-foreground">{"</script>"}</span>
                       {"\n</body>"}
                     </code>
                   </pre>
@@ -79,8 +79,8 @@ export function HowItWorks() {
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
                       <span className="text-xs text-foreground">Dark Mode</span>
-                      <div className="h-4 w-8 rounded-full bg-primary p-0.5">
-                        <div className="ml-auto h-3 w-3 rounded-full bg-primary-foreground" />
+                      <div className="h-4 w-8 rounded-full bg-foreground p-0.5">
+                        <div className="ml-auto h-3 w-3 rounded-full bg-background" />
                       </div>
                     </div>
                     <div>
@@ -89,7 +89,7 @@ export function HowItWorks() {
                         <span className="text-[10px] text-muted-foreground">18px</span>
                       </div>
                       <div className="h-1.5 w-full rounded-full bg-muted">
-                        <div className="h-1.5 w-3/4 rounded-full bg-primary" />
+                        <div className="h-1.5 w-3/4 rounded-full bg-foreground" />
                       </div>
                     </div>
                     <div>
@@ -98,7 +98,7 @@ export function HowItWorks() {
                         <span className="text-[10px] text-muted-foreground">Wider</span>
                       </div>
                       <div className="h-1.5 w-full rounded-full bg-muted">
-                        <div className="h-1.5 w-1/2 rounded-full bg-primary" />
+                        <div className="h-1.5 w-1/2 rounded-full bg-foreground" />
                       </div>
                     </div>
                   </div>
@@ -107,18 +107,18 @@ export function HowItWorks() {
 
               {step.visual === "chart" && (
                 <Link href="/dashboard" className="block">
-                  <div className="rounded-lg border border-border/60 bg-card p-4 transition-colors hover:border-primary/30">
+                    <div className="rounded-lg border border-border/60 bg-card p-4 transition-colors hover:border-foreground/20">
                     <div className="mb-3 flex items-center justify-between">
                       <span className="text-xs font-medium text-foreground">
                         Customizations
                       </span>
-                      <span className="text-xs text-primary">+23%</span>
+                      <span className="text-xs text-foreground">+23%</span>
                     </div>
                     <div className="flex items-end gap-1.5">
                       {[30, 50, 40, 70, 55, 80, 65].map((h, i) => (
                         <div
                           key={i}
-                          className="flex-1 rounded-sm bg-primary/30 transition-all hover:bg-primary/50"
+                          className="flex-1 rounded-sm bg-foreground/30 transition-all hover:bg-foreground/50"
                           style={{ height: `${h * 0.6}px` }}
                         />
                       ))}
