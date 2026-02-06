@@ -18,7 +18,7 @@ export function Hero() {
             Now in public beta
           </div>
 
-          <h1 className="text-balance text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="text-balance text-3xl font-semibold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-[56px]">
             Let Your Users Customize Your Site
             <span className="block text-muted-foreground">No Account Needed</span>
           </h1>
